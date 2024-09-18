@@ -1,0 +1,31 @@
+<section>
+  <div class="chat-history">
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>{{ userName }} Chat</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        @for (message of serverMessages; track $index) {
+          <p>
+            - <strong>{{ message.user }}</strong
+            >: {{ message.content }}
+            <span></span>
+          </p>
+          <mat-divider></mat-divider>
+        } @empty {
+          <p>No messages yet ...</p>
+        }
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <form>
+    <mat-form-field>
+      <mat-label>Ingrese mensaje ...</mat-label>
+      <input name="message" [(ngModel)]="message" matInput />
+    </mat-form-field>
+    <button type="submit" (click)="sendMessage()" mat-flat-button>
+      Enviar
+    </button>
+  </form>
+</section>

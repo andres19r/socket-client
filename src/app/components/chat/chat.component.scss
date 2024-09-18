@@ -1,0 +1,19 @@
+section {
+  margin: 0 auto;
+  width: 500px;
+  text-wrap: nowrap;
+  justify-content: center;
+}
+.chat-history {
+  margin-bottom: 10px;
+  width: 500px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    margin-left: 10px;
+  }
+}

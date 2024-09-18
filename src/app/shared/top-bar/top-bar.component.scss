@@ -1,0 +1,19 @@
+mat-toolbar {
+  background: #d7e3ff;
+  color: #005cbb;
+  margin-bottom: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+p {
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+mat-icon {
+  margin-left: 4px;
+}

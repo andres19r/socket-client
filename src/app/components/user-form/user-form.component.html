@@ -1,0 +1,14 @@
+<section class="user-form">
+  <h2>Ingrese su nombre</h2>
+
+  <form>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input name="user-name" [(ngModel)]="userName" matInput />
+    </mat-form-field>
+    <br />
+    <button type="submit" (click)="onSubmit()" mat-flat-button>
+      Confirmar
+    </button>
+  </form>
+</section>
